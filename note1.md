@@ -114,6 +114,7 @@ No 4: Anton Prafanto, S.Kom., MT. / Informatika / Internet of Things / NIDN : [K
 ```
 
 **Dampak:**
+
 - ❌ **TIDAK BISA SUBMIT** ke sistem BIMA (NIDN adalah mandatory field)
 - ❌ Reviewer akan anggap tim tidak lengkap atau fiktif
 - ❌ Proposal langsung ditolak sistem
@@ -155,6 +156,7 @@ H. DAFTAR PUSTAKA
 **Di State of the Art:** 7 penelitian tanpa referensi lengkap
 
 **Dampak:**
+
 - ❌ **PASTI DITOLAK** oleh reviewer (tidak ada referensi = plagiarisme?)
 - ❌ Tidak bisa diverifikasi klaim-klaim di proposal
 - ❌ Melanggar template BIMA (wajib ada daftar pustaka)
@@ -234,6 +236,7 @@ dan(14) IoT(15) untuk(16) Monitoring(17) Cuaca(18) Kontekstual(19)
 3. **Redundansi:** "Cerdas" + "Generasi Baru" (bermakna sama)
 
 **Dampak:**
+
 - ⚠️ Sistem bisa reject jika format error (tanda "]")
 - ⚠️ Judul misleading (isi proposal tentang peringatan, bukan monitoring)
 - ⚠️ Reviewer bingung apa yang dimaksud "Monitoring Cuaca Kontekstual"
@@ -270,6 +273,7 @@ Sub-bab berjudul "LATAR BELAKANG **DAN RUMUSAN MASALAH**", tapi:
 - ❌ **TIDAK ADA RUMUSAN MASALAH SAMA SEKALI!**
 
 **Dampak:**
+
 - ❌ Melanggar template BIMA (wajib ada rumusan masalah)
 - ❌ Reviewer tidak tahu apa pertanyaan penelitian yang ingin dijawab
 - ❌ Tidak jelas gap apa yang diisi
@@ -322,6 +326,7 @@ MANA YANG BENAR???
 ```
 
 **Dampak:**
+
 - ❌ Reviewer bingung dan menganggap proposal tidak konsisten
 - ❌ Kredibilitas peneliti diragukan (tidak paham TKT sendiri)
 
@@ -368,6 +373,7 @@ pada akhir November 2025, merenggut 967 jiwa, 262 orang hilang, dan lebih dari
 3. Copy-paste dari template yang salah tahun
 
 **Dampak:**
+
 - ❌ Reviewer langsung curiga: **"Ini data dari mana? Fiktif?"**
 - ❌ Kredibilitas proposal langsung jatuh
 - ❌ Dianggap tidak teliti dalam penulisan
@@ -415,6 +421,7 @@ dikonversi menjadi vector embeddings... disimpan dalam vector database..."
 - ❌ **Berapa biaya API LLM?** (sustainability?)
 
 **Dampak:**
+
 - ❌ Tidak bisa direproduksi (tidak ada detail teknis)
 - ❌ Reviewer tidak bisa assess kelayakan teknis
 - ❌ Reviewer tidak bisa assess kelayakan finansial (biaya API)
@@ -479,6 +486,7 @@ F. Biaya Operasional:
 Typo yang SAMA muncul **2 kali** di bagian penting (Kebaruan dan Roadmap)
 
 **Dampak:**
+
 - ⚠️ Menunjukkan **KURANG TELITI** dalam penulisan
 - ⚠️ Reviewer akan menganggap proposal **TIDAK PROFESIONAL**
 - ⚠️ Bisa menurunkan penilaian keseluruhan
