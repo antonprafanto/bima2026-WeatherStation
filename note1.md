@@ -40,20 +40,22 @@ Revolusi Sistem Respons Bencana Hidrometeorologi Cerdas Generasi Baru melalui In
 Proposal penelitian ini mengembangkan sistem peringatan dini banjir dengan mengintegrasikan teknologi **IoT dan Large Language Model (LLM)** untuk menghasilkan respons kontekstual dalam Bahasa Indonesia. Proposal memiliki **konsep inovatif dan relevansi tinggi**, namun terdapat **MASALAH KRITIS** yang dapat menyebabkan penolakan jika tidak diperbaiki.
 
 ### Kekuatan Utama:
-✅ **Urgensi kuat** - Data konkrit (967 korban jiwa, masalah lokal UNMUL)
-✅ **Roadmap solid** - Kontinuitas penelitian 2020-2029 (TKT 2 → TKT 9)
-✅ **Tim multidisiplin** - Informatika, Fisika/Geofisika, Teknik Sipil, Mitra BPBD
-✅ **Konsep inovatif** - Integrasi IoT + RAG-LLM (cutting-edge)
-✅ **Validasi berlapis** - Kalibrasi resmi (BMKG, Balai Standardisasi) + field test
+
+- ✅ **Urgensi kuat** - Data konkrit (967 korban jiwa, masalah lokal UNMUL)
+- ✅ **Roadmap solid** - Kontinuitas penelitian 2020-2029 (TKT 2 → TKT 9)
+- ✅ **Tim multidisiplin** - Informatika, Fisika/Geofisika, Teknik Sipil, Mitra BPBD
+- ✅ **Konsep inovatif** - Integrasi IoT + RAG-LLM (cutting-edge)
+- ✅ **Validasi berlapis** - Kalibrasi resmi (BMKG, Balai Standardisasi) + field test
 
 ### Kelemahan Kritis:
-🚨 **NIDN anggota tim kosong** - Anton Prafanto tidak ada NIDN (FATAL!)
-🚨 **Daftar Pustaka kosong** - Tidak ada satu pun referensi (KRITIS!)
-🚨 **Judul melebihi batas** - 27 kata (max 20 kata) - sistem akan reject
-🚨 **Kontradiksi TKT** - TKT 5 vs TKT 4 tidak konsisten di berbagai tempat
-🚨 **Data impossible** - "November 2025" belum terjadi (kredibilitas diragukan)
-🚨 **Tidak ada rumusan masalah** - Padahal template mewajibkan
-🚨 **RAG-LLM terlalu abstrak** - Tidak ada detail implementasi
+
+- 🚨 **NIDN anggota tim kosong** - Anton Prafanto tidak ada NIDN (FATAL!)
+- 🚨 **Daftar Pustaka kosong** - Tidak ada satu pun referensi (KRITIS!)
+- 🚨 **Judul melebihi batas** - 27 kata (max 20 kata) - sistem akan reject
+- 🚨 **Kontradiksi TKT** - TKT 5 vs TKT 4 tidak konsisten di berbagai tempat
+- 🚨 **Data impossible** - "November 2025" belum terjadi (kredibilitas diragukan)
+- 🚨 **Tidak ada rumusan masalah** - Padahal template mewajibkan
+- 🚨 **RAG-LLM terlalu abstrak** - Tidak ada detail implementasi
 
 ### Status Akhir:
 **⚠️ TIDAK SIAP SUBMIT - PERLU PERBAIKAN MAYOR**
