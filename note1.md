@@ -151,9 +151,11 @@ H. DAFTAR PUSTAKA
 
 → **TIDAK ADA SATU PUN REFERENSI!**
 
-**Padahal di Pendahuluan ada sitasi:** [1], [2], [3], [4], [5], [6], [7], [23], [25]
-**Di Metode ada referensi:** Amatebelle et al. (2025), Alimi et al. (2023), Kumar et al. (2024), dll.
-**Di State of the Art:** 7 penelitian tanpa referensi lengkap
+**Padahal ada banyak sitasi yang perlu referensi:**
+
+- **Di Pendahuluan:** [1], [2], [3], [4], [5], [6], [7], [23], [25]
+- **Di Metode:** Amatebelle et al. (2025), Alimi et al. (2023), Kumar et al. (2024), dll.
+- **Di State of the Art:** 7 penelitian tanpa referensi lengkap
 
 **Dampak:**
 
