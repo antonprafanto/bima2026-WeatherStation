@@ -768,10 +768,10 @@ Proposal terlalu optimis, tidak bahas **APA YANG DILAKUKAN JIKA SISTEM GAGAL**
 5. BPBD tidak adopt: Bagaimana sustainability?
 
 **Solusi:**
-```
+
 TAMBAHKAN:
 
-"Contingency Plan dan Risk Mitigation:
+**Contingency Plan dan Risk Mitigation:**
 
 | Risk | Probability | Impact | Mitigation |
 |------|-------------|--------|------------|
@@ -781,12 +781,13 @@ TAMBAHKAN:
 | Biaya API tinggi | 30% | Medium | Switch ke LLaMA-3; Hybrid rule+LLM |
 | BPBD tidak adopt | 10% | High | Early engagement; Pilot UNMUL only |
 
-Decision Tree:
+**Decision Tree:**
+```
 IF akurasi < 70% AFTER 6 months:
   → PIVOT: Hybrid rule-based + ML sederhana (skip LLM)
 
 IF LLM halusinasi > 30%:
-  → FALLBACK: Template-based response"
+  → FALLBACK: Template-based response
 ```
 
 **URGENCY: MEDIUM - Good practice untuk proposal**
@@ -815,4 +816,779 @@ TAMBAHKAN:
    Partisipan UAT akan tanda tangan consent berisi:
    a) Tujuan: Evaluasi sistem peringatan banjir AI
    b) Prosedur: Baca peringatan simulasi + isi kuesioner (15 menit)
-   c)
+   c) Risiko: Tidak ada risiko signifikan
+   d) Keuntungan: Kontribusi untuk sistem kebencanaan
+   e) Kesukarelaan: Bisa withdraw kapan saja
+   f) Kerahasiaan: Data dianonimisasi
+
+3. Data Privacy:
+   - PII dihapus dari dataset
+   - Data terenkripsi
+   - Dihapus 5 tahun setelah penelitian selesai"
+```
+
+**URGENCY: MEDIUM - Untuk UAT di Tahun 2**
+
+---
+
+<a name="analisis-per-bagian"></a>
+## 4. ANALISIS PER BAGIAN PROPOSAL
+
+### A. JUDUL (Skor: 60/100)
+
+#### ✅ Kelebihan:
+- Mencerminkan inovasi (IoT + LLM)
+- Spesifik teknologi
+- Aplikasi jelas
+
+#### 🚨 Masalah:
+1. **27 kata jika dihitung dengan teliti** (batas 20 kata) - kemungkinan ditolak sistem
+2. **"Revolusi" terlalu bombastis** - tidak ilmiah
+3. **"Monitoring Cuaca Kontekstual" SALAH KONSEP!**
+   - Yang kontekstual: PERINGATAN, bukan monitoring
+4. **Redundansi:** "Cerdas" + "Generasi Baru"
+5. **Format error:** Tanda "]" di akhir
+
+#### ✅ Rekomendasi:
+```
+OPSI TERBAIK (16 kata):
+"Sistem Peringatan Dini Banjir Cerdas Berbasis Integrasi IoT dan Large
+Language Model untuk Respons Kontekstual"
+```
+
+---
+
+### B. RINGKASAN (Skor: 75/100)
+
+#### ✅ Kelebihan:
+- Struktur baik (urgensi, tujuan, metode, luaran)
+- 289 kata (dalam batas 300 kata)
+- Kebaruan jelas (IoT + RAG-LLM)
+- TKT jelas
+
+#### ⚠️ Masalah:
+1. **Tidak ada target kuantitatif** (akurasi >85%? user satisfaction >4.0?)
+2. **Kalimat terlalu panjang** (>30 kata, sulit dibaca)
+3. **"Prototipe Granted" ambigu** (apa maksudnya?)
+
+#### ✅ Rekomendasi:
+Tambahkan target kuantitatif di akhir ringkasan
+
+---
+
+### C. KATA KUNCI (Skor: 70/100)
+
+#### 🚨 Masalah:
+**6 kata kunci (seharusnya 5!):**
+1. Sistem Peringatan Dini Banjir
+2. Hidrometeorologi
+3. Internet of Things
+4. Large Language Model
+5. Retrieval-Augmented Generation
+6. Bencana ← **KELEBIHAN!**
+
+#### ✅ Rekomendasi:
+```
+Hapus "Bencana" (terlalu umum, sudah terimplikasi di kata kunci lain)
+
+Kata kunci final (5):
+Sistem Peringatan Dini Banjir; Hidrometeorologi; Internet of Things;
+Large Language Model; Retrieval-Augmented Generation
+```
+
+---
+
+### D. PENDAHULUAN (Skor: 68/100)
+
+#### D.1. LATAR BELAKANG (Skor: 70/100)
+
+##### ✅ Kelebihan:
+- Urgensi kuat (967 korban, 33 kejadian Kaltim, masalah UNMUL)
+- Data konkrit
+- Alignment SDGs, Asta Cita, RIRN, PRN
+
+##### 🚨 Masalah KRITIS:
+1. **TIDAK ADA RUMUSAN MASALAH!** (padahal judul sub-bab: "Latar Belakang DAN Rumusan Masalah")
+2. **Data "November 2025" impossible** (belum terjadi)
+3. **Gambar 2-3 tidak relevan** (prototipe 2024, bukan 2026)
+4. **Tidak ada data awal** (berapa kali UNMUL banjir/tahun? Kerugian berapa?)
+
+##### ✅ Rekomendasi:
+Tambahkan 3 pertanyaan penelitian eksplisit (lihat Masalah #4)
+
+---
+
+#### D.2. PENDEKATAN PEMECAHAN MASALAH (Skor: 72/100)
+
+##### ✅ Kelebihan:
+- 6 tahapan terstruktur
+- Validasi dengan BPBD
+
+##### ⚠️ Masalah:
+1. **RAG-LLM masih abstrak** (tidak ada detail model, prompt, evaluasi)
+2. **Rules klasifikasi tidak dijelaskan** (threshold berapa?)
+3. **Tidak ada baseline comparison**
+
+---
+
+#### D.3. STATE OF THE ART (Skor: 65/100)
+
+##### ✅ Kelebihan:
+- Tabel 7 penelitian
+- Kategorisasi jelas (Prediksi, Monitoring, Kontekstual)
+
+##### 🚨 Masalah:
+1. **TIDAK ADA REFERENSI LENGKAP!** (author, tahun hanya singkatan jurnal)
+2. **Tidak ada analisis gap** (hanya tabel, tidak ada paragraf analisis)
+3. **Penelitian ACM 2024 sangat mirip** (gap tidak jelas)
+
+---
+
+#### D.4. ROADMAP (Skor: 80/100)
+
+##### ✅ Kelebihan:
+- Kontinuitas 2020-2029 solid
+- TKT progression jelas
+- Publikasi terdokumentasi (dengan DOI)
+- Diagram roadmap bagus
+
+##### ⚠️ Masalah:
+1. **Kontradiksi TKT** (TKT 5 vs TKT 4)
+2. **"Prototipe Granted" ambigu**
+3. **Link jurnal tidak konsisten format** (semua di JADS Q3, perlu diversifikasi)
+
+---
+
+### E. METODE (Skor: 66/100)
+
+##### ✅ Kelebihan:
+- Diagram Gambar 4 & 5 jelas
+- Spesifikasi sensor detail
+- Tim multidisiplin
+- Mitra BPBD terlibat
+
+##### 🚨 Masalah KRITIS:
+1. **Rules klasifikasi tidak dijelaskan** (threshold Aman/Siaga/Darurat?)
+2. **RAG-LLM terlalu abstrak** (model? embedding? vector DB? prompt? eval?)
+3. **Tidak ada kuesioner UAT** (hanya disebut "kuesioner" tanpa contoh)
+4. **Tidak ada outline feasibility study** (padahal luaran wajib)
+5. **Gambar 5 terlalu sederhana** (tidak ada detail power, failover)
+6. **Kontradiksi jumlah tahapan** (4 vs 6 vs 7)
+
+##### ✅ Rekomendasi:
+Tambahkan detail teknis (lihat Masalah #7, #10, #11, #12)
+
+---
+
+### F. HASIL YANG DIHARAPKAN (Skor: 75/100)
+
+##### ✅ Kelebihan:
+- Luaran lengkap (jurnal Scopus, prosiding, paten, hak cipta, TKT 6)
+- Target jelas (Accepted/Publish, Terdaftar/Granted)
+
+##### ⚠️ Masalah:
+1. **"Prototipe Granted" ambigu** (granted dari mana?)
+2. **Jurnal tidak spesifik Q-berapa** (Scopus Q1? Q2? Q3?)
+3. **Paten: Scope tidak jelas** (apa yang dipatenkan?)
+4. **Hak cipta video: Konten tidak dijelaskan** (video apa? Durasi berapa?)
+
+---
+
+### G. JADWAL (Skor: 72/100)
+
+##### ✅ Kelebihan:
+- Timeline 2 tahun realistis
+- Gantt chart jelas
+
+##### ⚠️ Masalah:
+1. **"Integrasi RAG-LLM" hanya 2 bulan** (Tahun 2, bulan 4-5) - **TERLALU SINGKAT!**
+   - Seharusnya 3-4 bulan (knowledge base, implementation, prompt engineering, eval)
+2. **Tidak ada buffer untuk revisi publikasi**
+3. **Tidak ada jadwal pengajuan paten & hak cipta**
+4. **Tahun 1: Desain hardware sudah dimulai sebelum analisis topografi selesai** (tidak logis)
+
+---
+
+### H. DAFTAR PUSTAKA (Skor: 0/100) 🚨
+
+##### 🚨 MASALAH FATAL:
+**KOSONG! TIDAK ADA SATU PUN REFERENSI!**
+
+Padahal ada sitasi: [1], [2], [3], [4], [5], [6], [7], [23], [25], Amatebelle et al., Alimi et al., Kumar et al., Widianto et al., Zeng et al., Abdelkareem, Adhinugroho et al., Arshad et al., Gao et al., Lewis et al., Hostetter et al., Goncalves et al.
+
+**ESTIMASI: Butuh minimal 30-40 referensi**
+
+---
+
+<a name="masalah-umum"></a>
+## 5. MASALAH UMUM YANG BERULANG
+
+### 1. INKONSISTENSI ISTILAH
+
+| Konteks | Variasi Istilah | Rekomendasi |
+|---------|-----------------|-------------|
+| Sistem | "Sistem Respons Bencana" / "Sistem Peringatan Dini" / "Sistem Monitoring Cuaca Kontekstual" | **Pilih:** "Sistem Peringatan Dini Banjir Berbasis IoT-LLM" |
+| AI | "Large Language Model" / "LLM" / "RAG-LLM" / "AI" / "Kecerdasan Buatan" | **Konsisten:** "LLM" setelah first mention |
+| Hardware | "Prototipe" / "Purwarupa" / "Weather Station" / "Sistem IoT" | **Konsisten:** "Prototipe sistem IoT" |
+| Output | "Peringatan" / "Respons" / "Notifikasi" / "Alert" | **Konsisten:** "Peringatan kontekstual" |
+| Integrasi | **"Intergrasi"** ← TYPO! | **Perbaiki:** "Integrasi" |
+| Hidrometeorologi | **"Hidrometerologi"** ← TYPO! | **Perbaiki:** "Hidrometeorologi" |
+
+---
+
+### 2. DATA TIDAK TERVERIFIKASI
+
+Data tanpa referensi:
+1. "Banjir November 2025 merenggut 967 jiwa" → **IMPOSSIBLE**
+2. "UNMUL FKIP & FEB rutin banjir" → Berapa kali/tahun? Kerugian berapa?
+3. "Sistem komersial puluhan-ratusan juta" → Brand? Model? Harga pasti?
+4. "Curah hujan Samarinda 1.827,50 mm/tahun" → Sumber? (BMKG? BPS? Tahun?)
+5. "Indeks risiko 98,29" → Sumber? (BNPB? BPBD? Tahun?)
+
+**Rekomendasi:** Setiap data kuantitatif **HARUS** ada referensi!
+
+---
+
+### 3. KONTRADIKSI TKT, TAHAPAN, ISTILAH
+
+| Aspek | Lokasi A | Lokasi B | Lokasi C |
+|-------|----------|----------|----------|
+| **TKT** | TKT 5 (Ringkasan) | TKT 4 (Roadmap) | TKT 5-6 (Kebaruan) |
+| **Tahapan** | 6 tahapan (Ringkasan) | 4 tahapan utama (Pendekatan) | 7 tahapan (Metode) |
+| **Ejaan** | Integrasi ✓ | **Intergrasi** ✗ | Integrasi ✓ |
+| **Ejaan** | Hidrometeorologi ✓ | **Hidrometerologi** ✗ | Hidrometeorologi ✓ |
+
+**Rekomendasi:** FIND & REPLACE untuk konsistensi
+
+---
+
+### 4. PLACEHOLDER BELUM DIISI
+
+1. Judul halaman 2: "JUDUL SKRIPSI JUDUL SKRIPSI" → Ganti judul asli
+2. NIDN Anton Prafanto: [KOSONG] → **ISI ATAU GANTI ANGGOTA!**
+3. Daftar Pustaka: "[………dst]" → **LENGKAPI 30-40 REFERENSI!**
+4. Daftar Gambar/Tabel/Lampiran: "contents" → Isi daftar yang benar
+
+---
+
+### 5. TIDAK ADA ANALISIS RISIKO
+
+Proposal tidak membahas **WHAT IF**:
+- Akurasi <70%? → Pivot ke hybrid rule-based?
+- LLM halusinasi >30%? → Fallback ke template?
+- Sensor rusak? → Redundancy? Maintenance?
+- Biaya API membengkak? → Switch ke LLaMA-3?
+- BPBD tidak adopt? → Alternative deployment?
+
+**Rekomendasi:** Tambahkan contingency plan (lihat Masalah #14)
+
+---
+
+<a name="rekomendasi-prioritas"></a>
+## 6. REKOMENDASI PRIORITAS PERBAIKAN
+
+### 🔴 TIER 1: FATAL (MUST FIX - Akan Ditolak Sistem)
+
+**Timeline: 1-2 minggu**
+
+1. ✅ **ISI NIDN ANTON PRAFANTO** atau ganti anggota tim
+   → Tidak bisa submit tanpa NIDN lengkap
+   → **Urgency: CRITICAL** - Alokasi: 1-2 hari
+
+2. ✅ **LENGKAPI DAFTAR PUSTAKA** (minimal 30 referensi)
+   → Proposal tidak valid tanpa referensi
+   → **Urgency: CRITICAL** - Alokasi: 5-7 hari
+
+3. ✅ **PERBAIKI JUDUL** (≤20 kata, fix konsep "Monitoring Cuaca Kontekstual")
+   → Sistem bisa reject jika >20 kata
+   → **Urgency: CRITICAL** - Alokasi: 1 hari
+
+---
+
+### 🔴 TIER 2: KRITIS (Proposal Ditolak Reviewer)
+
+**Timeline: 1 minggu**
+
+4. ✅ **TAMBAHKAN RUMUSAN MASALAH** (3 pertanyaan penelitian)
+   → Melanggar template BIMA
+   → **Urgency: HIGH** - Alokasi: 1 hari
+
+5. ✅ **PERBAIKI KONTRADIKSI TKT** (konsisten: TKT 4→5→6)
+   → Kredibilitas dipertanyakan
+   → **Urgency: HIGH** - Alokasi: 0.5 hari
+
+6. ✅ **PERBAIKI DATA "NOVEMBER 2025"** (cek tahun yang benar)
+   → Kredibilitas dipertanyakan
+   → **Urgency: HIGH** - Alokasi: 0.5 hari
+
+7. ✅ **DETAIL IMPLEMENTASI RAG-LLM** (model, embedding, vector DB, prompt, eval)
+   → Tidak bisa direproduksi
+   → **Urgency: HIGH** - Alokasi: 2 hari
+
+8. ✅ **FIX TYPO "INTERGRASI"** (ganti semua jadi "Integrasi")
+   → Unprofessional
+   → **Urgency: MEDIUM** - Alokasi: 0.1 hari (5 menit)
+
+---
+
+### 🟡 TIER 3: HIGH PRIORITY (Sangat Disarankan)
+
+**Timeline: 1 minggu**
+
+9. ✅ **TAMBAHKAN BASELINE METRICS** (survey akurasi sistem existing)
+   → Untuk prove improvement
+   → **Urgency: HIGH** - Alokasi: 3-4 hari
+
+10. ✅ **JELASKAN RULES KLASIFIKASI** (threshold Aman/Siaga/Darurat)
+    → Rules adalah core sistem
+    → **Urgency: HIGH** - Alokasi: 1 hari
+
+11. ✅ **TAMBAHKAN METRIK "KONTEKSTUAL"** (specificity score, relevance score)
+    → Untuk prove kebaruan utama
+    → **Urgency: HIGH** - Alokasi: 1 hari
+
+12. ✅ **ANALISIS BIAYA LLM API** (estimasi 2 tahun + sustainability)
+    → Untuk feasibility study
+    → **Urgency: HIGH** - Alokasi: 1 hari
+
+13. ✅ **ANALISIS ETIKA LLM** (anti-halusinasi, privacy, accountability)
+    → Untuk ethical clearance
+    → **Urgency: MEDIUM-HIGH** - Alokasi: 1 hari
+
+14. ✅ **CONTINGENCY PLAN** (jika akurasi <70%, LLM halusinasi, dll.)
+    → Good practice
+    → **Urgency: MEDIUM** - Alokasi: 1 hari
+
+15. ✅ **INFORMED CONSENT** (ethical clearance untuk UAT)
+    → Untuk UAT di Tahun 2
+    → **Urgency: MEDIUM** - Alokasi: 0.5 hari
+
+---
+
+### 🟢 TIER 4: MEDIUM PRIORITY (Good to Have)
+
+**Timeline: 3-5 hari**
+
+16. Perbaiki kata kunci (6 → 5 kata)
+17. Konsistensi jumlah tahapan (standardisasi jadi 7)
+18. Jelaskan "Generasi Baru" (apa bedanya dengan prototipe 2024?)
+19. Perbaiki Gambar 2-3 (pindahkan ke roadmap atau comparison)
+20. Fix typo "Hidrometerologi" → "Hidrometeorologi"
+21. Outline feasibility study (BAB 1-11)
+22. Contoh kuesioner UAT (Likert scale)
+23. Target jurnal spesifik (Q2 atau lebih baik)
+24. Revisi timeline Gantt (RAG-LLM 2 bulan → 3-4 bulan)
+
+---
+
+<a name="estimasi-waktu"></a>
+## 7. ESTIMASI WAKTU PERBAIKAN
+
+### Breakdown Waktu:
+
+| Tier | Masalah | Waktu Estimasi | Keterangan |
+|------|---------|----------------|------------|
+| **TIER 1** | NIDN Anton | 1-2 hari | Jika harus ganti anggota: 3-5 hari |
+| **TIER 1** | Daftar Pustaka | 5-7 hari | Riset 30-40 referensi berkualitas |
+| **TIER 1** | Judul | 1 hari | Brainstorm + konsultasi pembimbing |
+| **TIER 2** | Rumusan Masalah | 1 hari | 3 pertanyaan penelitian |
+| **TIER 2** | Kontradiksi TKT | 0.5 hari | Find & replace + konsistensi |
+| **TIER 2** | Data Nov 2025 | 0.5 hari | Cek referensi + perbaiki |
+| **TIER 2** | Detail RAG-LLM | 2 hari | Riset model, tulis spesifikasi |
+| **TIER 2** | Typo | 0.1 hari | 5 menit (find & replace) |
+| **TIER 3** | Baseline metrics | 3-4 hari | Survey awal + analisis |
+| **TIER 3** | Rules klasifikasi | 1 hari | Konsultasi BPBD untuk threshold |
+| **TIER 3** | Metrik kontekstual | 1 hari | Design metrik evaluasi |
+| **TIER 3** | Biaya LLM | 1 hari | Estimasi biaya + sustainability |
+| **TIER 3** | Etika LLM | 1 hari | Literature review + desain safeguards |
+| **TIER 3** | Contingency plan | 1 hari | Risk assessment table |
+| **TIER 3** | Informed consent | 0.5 hari | Draft consent form |
+| **TIER 4** | Medium priority | 3-5 hari | Perbaikan tambahan |
+
+### Total Estimasi:
+
+- **TIER 1 (FATAL):** 7-10 hari
+- **TIER 2 (KRITIS):** 5-6 hari
+- **TIER 3 (HIGH):** 8-10 hari
+- **TIER 4 (MEDIUM):** 3-5 hari
+
+**TOTAL: 23-31 hari kerja (3-4 minggu)**
+
+### Jalur Kritis (Parallel Processing):
+
+Jika dikerjakan **PARALEL** oleh tim:
+- Ketua: Riset referensi (7 hari)
+- Anggota 1: Detail RAG-LLM + metrik (3 hari)
+- Anggota 2: Baseline survey (4 hari)
+- Anggota 3: Rules + contingency (2 hari)
+
+**TOTAL PARALEL: 2-3 minggu**
+
+---
+
+<a name="kesimpulan"></a>
+## 8. KESIMPULAN DAN REKOMENDASI
+
+### 8.1. Kesimpulan
+
+Proposal penelitian ini memiliki **KONSEP INOVATIF DAN RELEVANSI TINGGI** dengan potensi kontribusi signifikan untuk mitigasi bencana banjir melalui integrasi teknologi IoT dan Large Language Model. Namun, proposal **BELUM SIAP UNTUK DISUBMIT** karena terdapat **15 MASALAH KRITIS** yang dapat menyebabkan:
+
+1. ✗ **PENOLAKAN OTOMATIS OLEH SISTEM**
+   - NIDN anggota kosong
+   - Daftar Pustaka kosong
+   - Judul mungkin melebihi batas
+
+2. ✗ **PENOLAKAN OLEH REVIEWER**
+   - Tidak ada rumusan masalah
+   - Data tidak terverifikasi (Nov 2025)
+   - Detail teknis terlalu abstrak
+
+3. ✗ **PENILAIAN RENDAH**
+   - Inkonsistensi (TKT, tahapan, typo)
+   - Tidak ada baseline comparison
+   - Tidak ada analisis risiko
+
+### 8.2. Kekuatan Proposal
+
+✅ **Urgensi Sangat Kuat**
+- Data konkrit: 967 korban, 33 kejadian banjir Kaltim, masalah lokal UNMUL
+- Alignment dengan SDGs, Asta Cita, RIRN, PRN
+
+✅ **Roadmap Solid dan Berkelanjutan**
+- Kontinuitas 2020-2029 (TKT 2 → TKT 9)
+- Track record publikasi terdokumentasi (4 jurnal Scopus Q3)
+- Hilirisasi jelas (2028-2029)
+
+✅ **Tim Multidisiplin Kuat**
+- Informatika (AI/ML), Fisika (Geofisika), Teknik Sipil (GIS), Mitra BPBD
+- Ketua berpengalaman (Prof. dengan publikasi konsisten)
+
+✅ **Konsep Inovatif**
+- Integrasi IoT + RAG-LLM (cutting-edge)
+- Fokus respons kontekstual (bukan hanya alert generik)
+- Bahasa Indonesia native
+
+✅ **Validasi Berlapis**
+- Kalibrasi resmi (BMKG, Balai Standardisasi)
+- Validasi data historis (BPBD)
+- User acceptance testing
+- Field deployment dengan mitra
+
+### 8.3. Kelemahan Kritis
+
+🚨 **FATAL (Tier 1):**
+1. NIDN Anton Prafanto kosong
+2. Daftar Pustaka kosong (0 referensi!)
+3. Judul kemungkinan >20 kata + konsep salah
+
+🚨 **KRITIS (Tier 2):**
+4. Tidak ada rumusan masalah
+5. Kontradiksi TKT 5 vs 4
+6. Data "November 2025" impossible
+7. RAG-LLM terlalu abstrak
+8. Typo berulang (unprofessional)
+
+🟡 **HIGH PRIORITY (Tier 3):**
+9. Tidak ada baseline metrics
+10. Rules klasifikasi tidak dijelaskan
+11. Tidak ada metrik "kontekstual"
+12. Tidak ada analisis biaya LLM
+13. Tidak ada analisis etika LLM
+14. Tidak ada contingency plan
+15. Tidak ada informed consent
+
+### 8.4. Rekomendasi Akhir
+
+#### STATUS PROPOSAL:
+**⚠️ TIDAK SIAP SUBMIT - PERLU REVISI MAYOR**
+
+**Skor: 65/100** (Cukup - Perlu Perbaikan Serius)
+
+#### LANGKAH PERBAIKAN:
+
+**FASE 1: PERBAIKAN FATAL (Minggu 1-2)**
+- [ ] Isi NIDN Anton Prafanto atau ganti anggota
+- [ ] Lengkapi 30-40 referensi
+- [ ] Perbaiki judul (≤20 kata, fix konsep)
+
+**FASE 2: PERBAIKAN KRITIS (Minggu 2-3)**
+- [ ] Tambahkan rumusan masalah (3 pertanyaan)
+- [ ] Konsistensi TKT di semua tempat
+- [ ] Perbaiki data "November 2025"
+- [ ] Detail implementasi RAG-LLM
+- [ ] Fix typo "Intergrasi" → "Integrasi"
+
+**FASE 3: PERBAIKAN HIGH PRIORITY (Minggu 3-4)**
+- [ ] Survey baseline metrics
+- [ ] Jelaskan rules klasifikasi
+- [ ] Tambahkan metrik "kontekstual"
+- [ ] Analisis biaya LLM + sustainability
+- [ ] Analisis etika LLM + safeguards
+- [ ] Contingency plan + risk mitigation
+- [ ] Informed consent form
+
+**FASE 4: QUALITY ASSURANCE (Minggu 4)**
+- [ ] Proofread keseluruhan (typo, konsistensi)
+- [ ] Cek alignment template BIMA
+- [ ] Konsultasi pembimbing
+- [ ] Mock review dengan sejawat
+
+#### TIMELINE REALISTIS:
+
+**Jika Dikerjakan Sendirian:** 4 minggu
+**Jika Dikerjakan Tim (Paralel):** 3 minggu
+**Dengan Konsultasi Intensif Pembimbing:** 2-3 minggu
+
+#### PESAN UNTUK TIM:
+
+Proposal ini memiliki **POTENSI SANGAT BAIK** untuk diterima program BIMA jika diperbaiki dengan serius. Yang dibutuhkan adalah:
+
+1. **FOKUS** pada perbaikan 15 masalah kritis
+2. **KONSISTENSI** dalam istilah, TKT, referensi
+3. **DETAIL TEKNIS** yang cukup untuk direproduksi
+4. **DATA TERVERIFIKASI** dengan referensi jelas
+
+Jangan terburu-buru submit! Alokasikan **3-4 minggu** untuk perbaikan menyeluruh. Hasil akhirnya akan jauh lebih kompetitif.
+
+**Good luck!**
+
+---
+
+<a name="checklist"></a>
+## 9. CHECKLIST PERBAIKAN
+
+### 🔴 TIER 1: FATAL (MUST FIX)
+
+#### A. JUDUL
+- [ ] Reduce dari 27 kata menjadi ≤20 kata
+- [ ] Hapus kata "Revolusi" (terlalu bombastis)
+- [ ] Ganti "Monitoring Cuaca Kontekstual" → "Peringatan Kontekstual" (konsep benar)
+- [ ] Hapus tanda "]" di akhir judul
+- [ ] Pilih salah satu dari 3 opsi judul yang disarankan
+
+#### B. NIDN ANGGOTA TIM
+- [ ] Isi NIDN Anton Prafanto **ATAU**
+- [ ] Ganti Anton dengan anggota lain yang punya NIDN **ATAU**
+- [ ] Pindahkan Anton ke "Tenaga Ahli" + rekrut anggota baru
+
+#### C. DAFTAR PUSTAKA
+- [ ] Riset dan tambahkan minimal 30-40 referensi:
+  - [ ] 5 ref: Bencana banjir Indonesia ([1]-[5])
+  - [ ] 2 ref: Sistem monitoring komersial ([6]-[7])
+  - [ ] 10 ref: ML untuk flood prediction ([8]-[17])
+  - [ ] 5 ref: IoT environmental monitoring ([18]-[22])
+  - [ ] 5 ref: RAG dan LLM ([23]-[27])
+  - [ ] 5 ref: GIS dan topografi ([28]-[32])
+  - [ ] 2 ref: Survey dan photogrammetry ([33]-[34])
+  - [ ] 4 ref: Kebijakan (RIRN, PRN, SDGs, Asta Cita) ([35]-[38])
+- [ ] Format semua referensi dengan Vancouver style (sistem nomor)
+- [ ] Pastikan setiap sitasi di teks ada di Daftar Pustaka
+
+---
+
+### 🔴 TIER 2: KRITIS (HIGH PRIORITY)
+
+#### D. RUMUSAN MASALAH
+- [ ] Tambahkan 3 pertanyaan penelitian eksplisit di akhir sub-bab D.1:
+  - [ ] Pertanyaan 1: Tentang sistem klasifikasi bahaya berbasis IoT
+  - [ ] Pertanyaan 2: Tentang integrasi RAG-LLM untuk respons kontekstual
+  - [ ] Pertanyaan 3: Tentang validasi dan target metrik (akurasi >85%, satisfaction >4.0)
+
+#### E. KONTRADIKSI TKT
+- [ ] Cek dan standardisasi TKT di SEMUA tempat:
+  - [ ] Ringkasan: "dari TKT 4 menuju TKT 6" ✓
+  - [ ] Kebaruan: "dari TKT 4 ke TKT 5, ditingkatkan ke TKT 6" ✓
+  - [ ] Roadmap tabel: "2024-2025: TKT 4" ✓
+  - [ ] Roadmap teks: "TKT 4... landasan TKT 5-6" ✓
+
+#### F. DATA "NOVEMBER 2025"
+- [ ] Cari sumber asli untuk data "967 jiwa, 262 hilang, 850.000 pengungsi"
+- [ ] Perbaiki tahun yang benar (kemungkinan 2024 atau 2023)
+- [ ] Tambahkan referensi ke Daftar Pustaka
+- [ ] Update sitasi [23] dengan nomor referensi yang benar
+
+#### G. DETAIL RAG-LLM
+- [ ] Tambahkan sub-bab "4.c. Spesifikasi Teknis RAG-LLM":
+  - [ ] Model LLM: Pilih Claude-3.5-Sonnet / GPT-4-turbo / LLaMA-3
+  - [ ] Embedding model: multilingual-e5-large
+  - [ ] Vector database: Chroma / Pinecone
+  - [ ] Prompt engineering: Contoh template
+  - [ ] Evaluasi: BLEU, ROUGE, human eval
+  - [ ] Biaya operasional: Estimasi 2 tahun + sustainability
+
+#### H. TYPO
+- [ ] Find & replace "Intergrasi" → "Integrasi" (di SEMUA tempat)
+- [ ] Find & replace "Hidrometerologi" → "Hidrometeorologi"
+- [ ] Find & replace "Intellegence" → "Intelligence"
+- [ ] Cek typo lainnya dengan spellchecker
+
+---
+
+### 🟡 TIER 3: HIGH PRIORITY (STRONGLY RECOMMENDED)
+
+#### I. BASELINE METRICS
+- [ ] Lakukan survey awal (Bulan 1-2 penelitian):
+  - [ ] Wawancara BPBD: Akurasi sistem existing
+  - [ ] Survey 50-100 civitas UNMUL: Kepuasan alert BMKG saat ini
+  - [ ] Analisis data historis: False alarm rate
+- [ ] Tambahkan baseline di D.1 (Latar Belakang)
+- [ ] Tambahkan target improvement di Tujuan
+
+#### J. RULES KLASIFIKASI
+- [ ] Tambahkan sub-bab "3.d. Rule-Based Classification":
+  - [ ] Parameter input (5 parameter)
+  - [ ] Rules untuk AMAN (threshold)
+  - [ ] Rules untuk SIAGA (threshold)
+  - [ ] Rules untuk DARURAT (threshold)
+  - [ ] Validasi dengan data historis BPBD
+  - [ ] Metrik: Confusion matrix, F1-score
+
+#### K. METRIK "KONTEKSTUAL"
+- [ ] Tambahkan metrik evaluasi kontekstualitas:
+  - [ ] Specificity Score (NER count, temporal info, actionable items)
+  - [ ] Relevance Score (user survey Likert 1-5)
+  - [ ] Personalization Score (user profile consideration)
+  - [ ] A/B Testing (generic vs kontekstual)
+  - [ ] Target: Specificity >8/10, Relevance >4.0, Compliance >80%
+
+#### L. ANALISIS BIAYA LLM
+- [ ] Tambahkan di Feasibility Study:
+  - [ ] Estimasi biaya fase penelitian (2 tahun)
+  - [ ] Estimasi biaya fase operasional (UNMUL vs kota)
+  - [ ] Strategi sustainability (open-source LLM, hybrid, partnership)
+
+#### M. ANALISIS ETIKA LLM
+- [ ] Tambahkan "Mitigasi Risiko LLM":
+  - [ ] Anti-halusinasi (fact-checking, confidence scoring, human-in-loop)
+  - [ ] Privacy (anonimisasi, consent, GDPR)
+  - [ ] Accountability (logging, disclaimer, insurance)
+
+#### N. CONTINGENCY PLAN
+- [ ] Tambahkan "Risk Mitigation Table":
+  - [ ] Risk: Akurasi <70% → Mitigation
+  - [ ] Risk: LLM halusinasi >30% → Mitigation
+  - [ ] Risk: Sensor failure → Mitigation
+  - [ ] Risk: Biaya API tinggi → Mitigation
+  - [ ] Risk: BPBD tidak adopt → Mitigation
+- [ ] Tambahkan Decision Tree untuk pivot strategy
+
+#### O. INFORMED CONSENT
+- [ ] Tambahkan "Ethical Clearance":
+  - [ ] Submission plan ke Komite Etik UNMUL
+  - [ ] Draft informed consent form (tujuan, prosedur, risiko, kesukarelaan)
+  - [ ] Data privacy measures (PII removal, encryption, deletion policy)
+
+---
+
+### 🟢 TIER 4: MEDIUM PRIORITY (GOOD TO HAVE)
+
+#### P. KATA KUNCI
+- [ ] Hapus "Bencana" (kata kunci ke-6)
+- [ ] Pastikan hanya 5 kata kunci
+
+#### Q. KONSISTENSI TAHAPAN
+- [ ] Standardisasi jadi 7 tahapan di SEMUA tempat:
+  - [ ] Ringkasan: 7 tahapan (bukan 6)
+  - [ ] Pendekatan: Hapus "4 tahapan utama", ganti jadi 7
+  - [ ] Metode: 7 tahapan (sudah benar)
+
+#### R. JELASKAN "GENERASI BARU"
+- [ ] Tambahkan penjelasan eksplisit di Kebaruan:
+  - [ ] Hardware Generasi Baru: 4 sensor → 8 sensor + water level
+  - [ ] Software Generasi Baru: Dashboard pasif → Klasifikasi otomatis
+  - [ ] Respons Generasi Baru: Tidak ada → RAG-LLM kontekstual
+
+#### S. GAMBAR 2-3
+- [ ] Pindahkan Gambar 2-3 ke bagian Roadmap **ATAU**
+- [ ] Buat comparison visual: Prototipe 2024 vs 2026 **ATAU**
+- [ ] Hapus Gambar 2-3, fokus pada Gambar 4-5
+
+#### T. OUTLINE FEASIBILITY STUDY
+- [ ] Tambahkan outline (BAB 1-11) di sub-bab 7
+
+#### U. KUESIONER UAT
+- [ ] Tambahkan contoh kuesioner Likert scale 1-5:
+  - [ ] Q1-Q2: Clarity
+  - [ ] Q3-Q4: Specificity
+  - [ ] Q5-Q6: Actionability
+  - [ ] Q7: Timeliness
+  - [ ] Q8: Trust
+  - [ ] Q9: Overall Satisfaction
+  - [ ] Q10-Q12: Open-ended
+
+#### V. TARGET JURNAL
+- [ ] Spesifikasi target jurnal:
+  - [ ] IEEE IoT Journal (Q1) / Sensors MDPI (Q1) / Natural Hazards (Q2)
+  - [ ] Target: Q2 atau lebih baik
+
+#### W. REVISI TIMELINE
+- [ ] Tahun 1: Perbaiki urutan (analisis topografi selesai dulu baru desain hardware)
+- [ ] Tahun 2: Extend "Integrasi RAG-LLM" dari 2 bulan → 3-4 bulan
+- [ ] Tambahkan buffer revisi publikasi
+- [ ] Tambahkan jadwal pengajuan paten & hak cipta
+
+---
+
+### QUALITY ASSURANCE (BEFORE SUBMIT)
+
+#### X. FINAL CHECK
+- [ ] Proofread keseluruhan dokumen (typo, grammar)
+- [ ] Cek alignment dengan template BIMA (semua bagian terisi)
+- [ ] Cek konsistensi istilah (satu glossary)
+- [ ] Cek semua placeholder sudah diisi
+- [ ] Cek semua gambar ada caption dan nomor yang benar
+- [ ] Cek semua tabel ada caption dan nomor yang benar
+- [ ] Cek Daftar Isi up-to-date (nomor halaman benar)
+- [ ] Cek Daftar Gambar/Tabel/Lampiran terisi
+- [ ] Mock review dengan sejawat/pembimbing
+- [ ] Konsultasi final dengan pembimbing
+
+---
+
+## PRIORITAS KERJA (RECOMMENDED ORDER)
+
+**Minggu 1: FATAL**
+1. Isi NIDN / Ganti anggota (Day 1-2)
+2. Riset referensi (Day 3-7)
+3. Perbaiki judul (Day 7)
+
+**Minggu 2: KRITIS**
+1. Tambahkan rumusan masalah (Day 1)
+2. Fix kontradiksi TKT (Day 1)
+3. Perbaiki data Nov 2025 (Day 1)
+4. Detail RAG-LLM (Day 2-3)
+5. Fix typo (Day 3)
+
+**Minggu 3: HIGH PRIORITY**
+1. Survey baseline (Day 1-4)
+2. Rules klasifikasi (Day 4)
+3. Metrik kontekstual (Day 5)
+4. Biaya LLM (Day 5)
+5. Etika LLM (Day 6)
+6. Contingency plan (Day 6)
+7. Informed consent (Day 7)
+
+**Minggu 4: MEDIUM + QA**
+1. Medium priority fixes (Day 1-3)
+2. Quality assurance (Day 4-5)
+3. Mock review (Day 6)
+4. Final revision (Day 7)
+
+---
+
+## PENUTUP
+
+Proposal ini **SANGAT BERPOTENSI** untuk diterima program BIMA jika diperbaiki dengan serius dan sistematis. Alokasikan **3-4 minggu** untuk perbaikan menyeluruh mengikuti checklist ini.
+
+**Status Saat Ini:** 65/100 (Cukup - Perlu Perbaikan Serius)
+**Status Setelah Perbaikan (Estimasi):** 85-90/100 (Sangat Baik - Siap Submit)
+
+---
+
+**Auditor:** Claude AI Assistant (Sonnet 4.5)
+**Tanggal Audit:** 28 Desember 2025
+**Versi Laporan:** 2.0 (Final - Komprehensif)
+
+---
+
+**END OF COMPREHENSIVE AUDIT REPORT**
